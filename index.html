@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+        </style>
+    <title>Programacion</title>
+</head>
+<body>
+    <div class="container-header">
+        <span id="inicio"></span>
+        <div class="header">
+            <a href="#inicio"><h2 class="title">C++</h2></a>
+            <ul>
+                <li class="section" ><a href="#Puntero">Puntero</a></li>
+                <li class="section"><a href="#Estruct">Estruct</a></li>
+                <li class="section"><a href="#Funcion">Función</a></li>
+                <li class="section"><a href="#MemoriaDinamica">Memoria</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <h2 class="title" id="Puntero">PUNTEROS</h2>
+        <div class="container-cat">
+            <img src="img/puntero.png" alt="">
+                <div class="aside">
+                    <p>El puntero es una técnica muy potente que hace que la programación C++ sea tan utilizada. La técnica de punteros apoya a la
+                        programación orientada a objetos, que es una de las grandes diferencias entre C y C++.
+                        
+                        Un pointer no es más que una variable más, de 32 o 64 bits (es
+                        decir, 4 bytes u 8 bytes) dependiendo de si estamos en un
+                        ordenador de 32 o de 64 bits dependiendo de su arquitectura.
+                        Cuando se crea una variable tipo pointer, se crea una variable
+                        normal pero que siempre será de 4 bytes independientemente de a
+                        qué apunte .Es una variable pensada para guardar una dirección de
+                        memoria. El calificador del pointer es simplemente una forma para el programador y para que el compilador tengan claro a qué
+                        tipo de memoria apunta y controle cuando, por ejemplo, a un puntero a un char se le asigna un valor long int.
+                        Se debe tener en cuenta que el tamaño debe de ser el suficiente como para poder representar todas las direcciones de memoria
+                        del ordenador en cuestión
+                    </p>
+                    <a style="width: 141px;" href="archivosC/index.php"><button class="botton" >Ejecutar</button></a>
+                </div>
+        </div>
+        <h2 class="title" id="Estruct">ESTRUCTURA</h2>
+        <div class="container-cat">
+            <img src="img/estructuras.PNG" alt="">
+                <div class="aside">
+                    <p>Una estructura es un conjunto de variables de diferentes tipos referenciadas bajo el mismo nombre.
+                        Ejemplo1:
+                        struct empleado
+                        {
+                        char nombre[30];
+                        int edad;
+                        float sueldo;
+                        }.  Los campos de una estructura pueden ser de cualquier, incluso pueden ser otra estructura. Una estructura entonces puede ser
+                        parte de otra más grande, así como también puede ser parte de un array o una matriz.    Al hacer estos ejercicios puede surgir un problema: Lee la primer estructura perfectamente, pero cuando intenta leer la
+                        segunda, el programa “salta” la lectura del nombre y lee directamente el apellido. Este error es normal. El teclado es un
+                        dispositivo de entrada que tiene un buffer intermedio, esto es, una memoria intermedia entre la máquina y el teclado.   Entonces, para poder realizar una lectura correctamente, luego de leer un entero deberemos escribir:
+                        fflush(stdin);
+                    </p>
+                    <a href="archivosC/estructuras.php"><button class="botton" href="archivosC/estructuras.php">Ejecutar</button></a>
+                </div>
+        </div>
+        <h2 class="title" id="Funcion"> FUNCION</h2>
+        <div class="container-cat">
+            <img src="img/funciones.PNG" alt="">
+                <div class="aside">
+                    <p>Una función está formada por un conjunto de sentencias
+                        que realizan una determinada tarea y que podemos invocar
+                        mediante un nombre. Utilizando funciones podemos
+                        construir programas modulares.
+                        Un programa C++ está formado por una o más funciones.
+                        Todo programa C++ tiene una función llamada main, que es
+                        el punto de entrada al programa y también el punto de
+                        salida.
+                    </p>
+                    <a style="width: 141px;" href="archivosC/funcion.php"><button class="botton" >Ejecutar</button></a>
+                </div>
+        </div>
+        <h2 class="title" id="MemoriaDinamica"> Memoria Dinámica</h2>
+        <div class="container-cat">
+            <img src="img/memoriaDinamica.png" alt="">
+                <div class="aside">
+                    <p>Cada vez que se quiere usar una variable se le debe reservar
+                        un lugar de memoria al comenzar el programa. Por lo que se
+                        debe indicar al compilador cuánta memoria se utilizará.
+                        Por ejemplo, si se hace la siguiente declaración
+                        int numero[20];
+                        el compilador reserva espacio para 20 números enteros.
+                        Pero existen ocasiones en las que no sabemos cuánta
+                        memoria se necesitará hasta que no se ejecuta el programa.
+                        C++ permite poder reservar memoria según se va
+                        necesitando, es decir, en tiempo de ejecución.
+                        Se puede reservar memoria para reservar 2 números o 1000
+                        si el usuario que ejecuta el programa así lo desea en ese
+                        momento.
+                        La ventaja de utilizar memoria dinámica se manifiesta en que
+                        los programas aprovecharán mejor la memoria en el
+                        momento que se ejecuten usando sólo lo necesario.
+                        C++ proporciona dos operadores para la gestión de
+                        memoria:
+                        El operador new y el operador delete.
+                    </p>
+                    <a style="width: 141px;" href="archivosC/memoriaDinamica.php"><button class="botton" >Ejecutar</button></a>
+                </div>
+        </div>
+    </div>
+    <script src="script/redirecciones.js"></script>
+</body>
+</html>
